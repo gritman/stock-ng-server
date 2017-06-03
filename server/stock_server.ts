@@ -3,8 +3,12 @@
  */
 import * as express from 'express';
 import {Server} from 'ws';
+import * as path from 'path';
 
 const app = express();
+
+// 告诉服务器,静态资源都放在这个目录下
+app.use('/', express.static(path.join(__dirname, '..', 'client')));
 
 app.get('/api/stock', (req, res) => {
    let result = stocks;

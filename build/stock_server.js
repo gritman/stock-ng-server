@@ -5,7 +5,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */
 var express = require("express");
 var ws_1 = require("ws");
+var path = require("path");
 var app = express();
+// 告诉服务器,静态资源都放在这个目录下
+app.use('/', express.static(path.join(__dirname, '..', 'client')));
 app.get('/api/stock', function (req, res) {
     var result = stocks;
     var params = req.query;
