@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="143d06f2-361a-4351-83fd-8b1b31145ca1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/stock_server.js" afterPath="$PROJECT_DIR$/build/stock_server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/stock_server.ts" afterPath="$PROJECT_DIR$/server/stock_server.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,9 +42,11 @@
       <file leaf-file-name="stock_server.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/stock_server.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-              <folding />
+            <state relative-caret-position="165">
+              <caret line="37" column="47" lean-forward="false" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+              <folding>
+                <element signature="e#41#76#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,10 +54,12 @@
       <file leaf-file-name="stock_server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build/stock_server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="80">
+              <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
               <folding>
-                <marker date="1496502878095" expanded="true" signature="0:1492" ph="/** Created by Edwin on 2017/6/3. ...*/" />
+                <marker date="1496506188842" expanded="true" signature="1209:1470" ph="{...}" />
+                <marker date="1496506188842" expanded="true" signature="1273:1450" ph="{...}" />
+                <marker date="1496506188842" expanded="true" signature="1511:2000" ph="[...]" />
               </folding>
             </state>
           </provider>
@@ -249,12 +255,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1496499845203</updated>
-      <workItem from="1496499846457" duration="2554000" />
+      <workItem from="1496499846457" duration="4392000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2554000" />
+    <option name="totallyTimeSpent" value="4392000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1378" height="735" extended-state="0" />
@@ -268,7 +274,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294509" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34494773" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -308,19 +314,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build/stock_server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="80">
+          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
           <folding>
-            <marker date="1496502878095" expanded="true" signature="0:1492" ph="/** Created by Edwin on 2017/6/3. ...*/" />
+            <marker date="1496506188842" expanded="true" signature="1209:1470" ph="{...}" />
+            <marker date="1496506188842" expanded="true" signature="1273:1450" ph="{...}" />
+            <marker date="1496506188842" expanded="true" signature="1511:2000" ph="[...]" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/stock_server.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="165">
+          <caret line="37" column="47" lean-forward="false" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+          <folding>
+            <element signature="e#41#76#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

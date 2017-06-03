@@ -2,6 +2,7 @@
  * Created by Edwin on 2017/6/3.
  */
 import * as express from 'express';
+import {Server} from 'ws';
 
 const app = express();
 
@@ -21,6 +22,26 @@ app.get('/api/stock/:id', (req, res) => {
 const server = app.listen(8000, 'localhost', () => {
     console.log('服务器已启动,地址是 http://localhost:8000')
 });
+
+// 这个集合用来存放所有连接到websocket的客户端
+const subscriptions = new Set<any>();
+
+const wsServer = new Server({port: 8085});
+wsServer.on('connection', websocket => {
+    subscriptions.add(websocket);
+});
+
+let messageCount = 0;
+
+setInterval(() => {
+    subscriptions.forEach(ws => {
+        if(ws.readyState === 1) { // 先判断连接是否还存在
+            ws.send(JSON.stringify({messageCount: messageCount++}));
+        } else {
+            subscriptions.delete(ws);
+        }
+    })
+}, 2000);
 
 export class Stock {
     constructor(public id: number,

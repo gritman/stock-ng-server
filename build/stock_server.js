@@ -4,6 +4,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * Created by Edwin on 2017/6/3.
  */
 var express = require("express");
+var ws_1 = require("ws");
 var app = express();
 app.get('/api/stock', function (req, res) {
     var result = stocks;
@@ -19,6 +20,23 @@ app.get('/api/stock/:id', function (req, res) {
 var server = app.listen(8000, 'localhost', function () {
     console.log('服务器已启动,地址是 http://localhost:8000');
 });
+// 这个集合用来存放所有连接到websocket的客户端
+var subscriptions = new Set();
+var wsServer = new ws_1.Server({ port: 8085 });
+wsServer.on('connection', function (websocket) {
+    subscriptions.add(websocket);
+});
+var messageCount = 0;
+setInterval(function () {
+    subscriptions.forEach(function (ws) {
+        if (ws.readyState === 1) {
+            ws.send(JSON.stringify({ messageCount: messageCount++ }));
+        }
+        else {
+            subscriptions.delete(ws);
+        }
+    });
+}, 2000);
 var Stock = (function () {
     function Stock(id, name, price, rating, desc, categories) {
         this.id = id;
